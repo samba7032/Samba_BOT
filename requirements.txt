@@ -1,12 +1,15 @@
-# Core Bot Requirements
+# System Essentials
+setuptools==68.0.0  # Fixes 'distutils' missing error
+
+# Core Bot
 python-telegram-bot==20.3
 requests==2.31.0
 python-dotenv==1.0.0
 
 # Data/Finance
 yfinance==0.2.18
-ta-lib==0.4.24
-pandas==2.0.3  # Often needed with yfinance/ta-lib
-numpy==1.24.0  # Dependency for pandas/ta-lib
+pandas==2.0.3
+numpy==1.24.0
 
-
+# Database (Only if used)
+psycopg2-binary==2.9.6
