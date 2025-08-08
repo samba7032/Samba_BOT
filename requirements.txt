@@ -1,11 +1,4 @@
-# CORE (100% essential)
-python-telegram-bot==20.3  # Main bot library
-requests==2.31.0           # For API calls (if your bot fetches data)
-python-dotenv==1.0.0       # For .env secrets (if used)
-
-# DATABASE (only if your bot uses PostgreSQL on Railway)
-psycopg2-binary==2.9.6     # Lightweight PostgreSQL connector
-
-# OPTIONAL (add only if used)
-# httpx==0.24.1            # Uncomment if bot uses async HTTP
-# pandas==2.0.3            # Only if doing heavy data processing
+python-telegram-bot==20.3
+yfinance==0.2.18  # <-- CRITICAL: This was missing!
+requests==2.31.0
+python-dotenv==1.0.0
